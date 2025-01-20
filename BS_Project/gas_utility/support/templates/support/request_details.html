@@ -1,0 +1,8 @@
+<h2>Request Details</h2>
+<p>{{ service_request.description }}</p>
+<p>Status: {{ service_request.status }}</p>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update Status</button>
+</form>

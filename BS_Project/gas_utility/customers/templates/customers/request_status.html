@@ -1,0 +1,6 @@
+<h2>Service Request Status</h2>
+<ul>
+    {% for request in service_requests %}
+    <li>{{ request.id }} - {{ request.status }} - Created at: {{ request.created_at }}</li>
+    {% endfor %}
+</ul>

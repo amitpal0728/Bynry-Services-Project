@@ -1,0 +1,6 @@
+<h2>Manage Service Requests</h2>
+<ul>
+    {% for request in service_requests %}
+    <li><a href="{% url 'request_details' request.id %}">{{ request.id }} - {{ request.status }}</a></li>
+    {% endfor %}
+</ul>
