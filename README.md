@@ -64,7 +64,7 @@ Push the code:
 
 git push heroku master
 
-# Open the app:
+Open the app:
 
 heroku open
 
